@@ -1,0 +1,30 @@
+{
+    "name": "prim/httpfactory",
+    "type": "library",
+    "description": "PSR-17 factory with additional methods for clients and emitters.",
+    "keywords": ["utility"],
+    "homepage": "https://github.com/PrimFramework/httpfactory",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kendall Weaver",
+            "email": "kendalltweaver@gmail.com",
+            "homepage": "https://github.com/kendalltristan",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "guzzlehttp/psr7": "^1.6",
+        "laminas/laminas-httphandlerrunner": "^1.1",
+        "php": ">=7.3.0",
+        "psr/http-client": "^1.0",
+        "psr/http-factory": "^1.0",
+        "psr/http-message": "^1.0",
+        "socialconnect/http-client": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Prim\\HttpFactory\\": "src/"
+        }
+    }
+}
