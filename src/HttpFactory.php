@@ -5,6 +5,8 @@
  * has functions for returning the implementation class names and function for
  * PSR-18 HTTP clients and SAPI emitters as well.
  *
+ * A lot of this is taken directly from the Guzzle dev branch.
+ *
  * @author Kendall Weaver <kendalltweaver@gmail.com>
  * @since 0.0.1 Initial Release
  */
