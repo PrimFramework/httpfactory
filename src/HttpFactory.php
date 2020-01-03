@@ -3,9 +3,7 @@
 /**
  * PSR-17 factory for creating objects implementing the PSR-7 interfaces. Also
  * has functions for returning the implementation class names and function for
- * PSR-18 HTTP clients as well.
- *
- * This is mostly ripped straight out of the 2.x dev branch of guzzlehttp/psr7.
+ * PSR-18 HTTP clients and SAPI emitters as well.
  *
  * @author Kendall Weaver <kendalltweaver@gmail.com>
  * @since 0.0.1 Initial Release
