@@ -15,6 +15,7 @@ declare(strict_types=1);
 
 namespace Prim\HttpFactory;
 
+use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
 use GuzzleHttp\Psr7\ServerRequest;
@@ -116,6 +117,16 @@ class HttpFactory implements
     public function createStream(string $content = ''): StreamInterface
     {
         return \GuzzleHttp\Psr7\stream_for($content);
+    }
+
+
+    /**
+     * @param array $elements
+     * @return StreamInterface
+     */
+    public function createMultipartStream(array $elements = []): StreamInterface
+    {
+        return new MultipartStream($elements);
     }
 
 
